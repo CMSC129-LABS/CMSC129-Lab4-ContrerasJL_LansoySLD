@@ -1,13 +1,21 @@
 function validateNote(note) {
-  throw new Error('Not implemented');
+  if (!note.title || note.title.trim() === '') {
+    return false;
+  }
+  return true;
 }
 
 function generateId() {
-  throw new Error('Not implemented');
+  return Date.now().toString() + Math.random().toString(36).slice(2);
 }
 
 function formatNote(note) {
-  throw new Error('Not implemented');
+  return {
+    id: generateId(),
+    title: note.title,
+    body: note.body,
+    createdAt: new Date().toISOString()
+  };
 }
 
 module.exports = { validateNote, generateId, formatNote };
