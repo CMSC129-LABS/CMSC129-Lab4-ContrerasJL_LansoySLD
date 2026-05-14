@@ -44,6 +44,13 @@ This is a simple note-taking web application built as a single-resource CRUD app
 
 ---
 
+## Test Results
+
+### Unit Tests
+
+![Unit Tests Passing](docs/screenshots/UnitTestScreenshot.png)
+
+
 ## Setup Instructions
 
 ### Clone the repository
